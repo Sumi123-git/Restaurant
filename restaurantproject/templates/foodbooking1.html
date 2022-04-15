@@ -1,0 +1,218 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+
+</style>
+    <meta charset="UTF-8">
+    <title>FOOD-BOOKING</title>
+</head>
+<body style="background-image:url({% static 'images/slide_2.jpg' %})">
+
+
+<h1 style="color:blue;font-size:270%;">RESERVE YOUR FOOD ITEMS</h1>
+
+		<form  method="post" action="foodbooking">
+	                      {% csrf_token %}
+<div class="container">
+    <div class="row">
+<!--        <div class="col-12 col-sm-12 col-md-12 col-lg-6">-->
+<div class="col-md-6">
+
+<!--							<label for="name" class="sr-only">Name</label>-->
+							<input id="name" class="form-control" placeholder="Name" type="text"><br>
+<!--    <label for="email" class="sr-only">Email</label>-->
+							<input id="email" class="form-control" placeholder="Email" type="email"><br>
+<!--    <label for="phone number" class="sr-only">Phone Number</label>-->
+							<input id="phone number" class="form-control" placeholder="phone number" type="text"><br>
+<!--							<label for="occation" class="sr-only">Vegetarian</label><br>-->
+<!--							<select class="form-control" id="occation">-->
+    <div class="row">
+ <h2 style="color:black;font-size:170%;">Vegetarian-Items</h2>
+								<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Paneer Makhani Biryani
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+   Mushroom Kofta in Tomato Gravy
+  </label>
+</div>
+								<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+ Dahi Kebab
+  </label>
+</div>
+																<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+Stuffed Baby Eggplant
+  </label>
+</div>
+
+																<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+Samosas and Pakoras
+  </label>
+</div>
+
+																<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+Stuffed Masala Mushrooms
+  </label>
+</div>
+
+																<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+Masala Channa
+  </label>
+</div>
+								<div class="form-check">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+Aamras Ki Kadhi
+  </label>
+</div>
+								<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+Vegetarian Khao Suey
+  </label>
+</div>
+        </div>
+
+<!--								-->
+<!--							  <option></option>-->
+<!--							  <option></option>-->
+<!--								 <option></option>-->
+<!--								 <option></option>-->
+<!--								 <option> </option>-->
+<!--								<option>Green Juice</option>-->
+<!--								<option></option>-->
+<!--								<option> </option>-->
+<!--								<option> </option>-->
+<!--								<option></option>-->
+
+
+
+<!--							</select>-->
+
+
+
+
+<!--							<br><label for="occation" class="sr-only">Non-Vegetarian</label><br>-->
+<!--							<select class="form-control" id="occation"><br>-->
+    <div class="row">
+	<br> <h2 style="color:black;font-size:170%;">Non-Vegetarian-Items</h2>
+
+																<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+Beef Grilled
+  </label>
+</div>
+																								<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+Keema Samosa with Yoghurt Dip
+  </label>
+</div>
+																								<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+Tandoori Lamb Chops
+  </label>
+</div>
+																								<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+Malabar Fish Biryani
+  </label>
+</div>
+																								<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+Mutton Korma
+  </label>
+</div>
+																								<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+Tomato with Chicken
+  </label>
+</div>
+																								<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+Beef Steak
+  </label>
+</div>
+																								<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+Sausages from Italy
+  </label>
+</div>
+																																<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+Tunde kabab
+  </label>
+</div>
+</div>
+<!--							  <option></option>-->
+<!--							  <option></option>-->
+<!--								  <option></option>-->
+<!--								  <option></option>-->
+<!--								  <option></option>-->
+<!--								  <option></option>-->
+<!--                                 <option></option>-->
+<!--								 <option></option>-->
+<!--                                  <option></option>-->
+
+<!--								 <option>Rogan Josh </option>-->
+
+
+<!--							</select>-->
+
+
+
+<!--							<br><label for="date" class="sr-only">date</label><br>-->
+<!--							<input id="date" class="form-control" placeholder="Date &amp; Time" type="text"><br>-->
+
+<!--							<input class="btn btn-success" value="Submit" type="submit">-->
+    		<br><a href="/"class="btn btn-success" href="#" role="button" style="color:blue;font-size:160%;">CONFIRM-ORDER</a><br>
+    <br>
+
+<!--<p class="btn btn-success"><a href="/" class="btn btn-success">conform-order</a></p>-->
+							<a href="/" class="btn btn-success" style="color:blue;font-size:160%">BACK-2-HOME</a></p><br>
+				</div>
+<!--		  <div class="col-12 col-sm-12 col-md-12 col-lg-6">-->
+<!--					<div class="col-md-6 to-animate-2">-->
+<!--						<h3>Contact Info</h3>-->
+<!--						<ul class="fh5co-contact-info">-->
+<!--							<li class="fh5co-contact-address ">-->
+<!--								<i class="icon-home"></i>-->
+<!--								5555 marine drive 56 lulumall 5655, <br>Excel Tower kakkanad-->
+<!--							</li>-->
+<!--							<li><i class="icon-phone"></i> (123) 465-6789</li>-->
+<!--							<li><i class="icon-envelope"></i>Pastha_foods@gmail.com</li>-->
+<!--							<li><i class="icon-globe"></i> <a href="http://127.0.0.1:8000/" target="_blank">A-foods.co</a></li>-->
+<!--						</ul>-->
+<!--					</div>-->
+<!--	         </div>-->
+	</div>
+</div>
+     </form>
+
+</body>
+</html>

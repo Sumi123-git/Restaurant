@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+</head>
+<body style="background-image:url({% static 'images/slide_3.jpg' %})">
+
+
+<h1 style="color:yellow;font-size:270%;">ENTER YOUR VALID CREDENTIALS</h1>
+<form action="login" method="post">
+    {% csrf_token %}
+     <input type="text" name="username" placeholder="enter your username"><br>
+     <input type="password" name="password" placeholder="enter your password"><br>
+     <input type="submit"><br>
+    <br>
+    <strong><a href="/" class="btn btn-success" style="color:yellow;font-size:160%;">BACK-2-HOME</a></strong><br>
+    <br>
+     <strong><a href="http://127.0.0.1:8000/credentials/register"style="color:yellow;font-size:160%;" class="btn btn-success">BACK-2-REGISTRATION</a></strong>
+</vr>
+</form>
+
+</body>
+</html>

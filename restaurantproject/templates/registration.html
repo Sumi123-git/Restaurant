@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTRATION</title>
+</head>
+<body  style="background-image:url({% static 'images/slide_1.jpg' %})">
+
+
+<h1 style="color:aqua;font-size:270%;">WELCOME TO REGISTRATION</h1>
+<h2></h2>
+<form action="register" method="post">
+      {% csrf_token %}
+    <input type="text" name="username" placeholder="enter your username"><br>
+    <input type="text" name="first_name" placeholder="enter your first_name"><br>
+    <input type="text" name="last_name" placeholder="enter your last_name"><br>
+    <input type="email" name="email" placeholder="enter your email"><br>
+    <input type="password" name="password" placeholder="enter your password"><br>
+    <input type="password" name="cpassword" placeholder="confirm your password"><br>
+    <input type="submit"><br>
+    <br>
+ <strong><a href="/" class="btn btn-success" style="color:aqua;font-size:160%;">BACK-2-HOME</a></strong>
+
+
+</form>
+</body>
+</html>
